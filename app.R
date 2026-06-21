@@ -104,7 +104,8 @@ ui <- tagList(
     
     mainPanel(
       plotOutput("plot"),
-      htmlOutput("dist_info")
+      htmlOutput("dist_info"),
+      br()
     )
   )
 )
