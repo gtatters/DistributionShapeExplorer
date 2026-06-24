@@ -237,8 +237,8 @@ server <- function(input, output) {
     
     input$resample   # re-run on button click; also runs once at startup (value = 0)
     
-    n    <- isolate(input$n)
-    dist <- isolate(input$dist)
+    n    <- input$n
+    dist <- input$dist
     
     if (dist == "norm")   req(input$mu, input$sd)
     if (dist == "lnorm")  req(input$meanlog, input$sdlog)
